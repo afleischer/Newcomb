@@ -1,0 +1,22 @@
+#background_top {
+	background-image: src('img/newcomb_top');
+
+}
+
+
+#background_bottom {
+	background-image: src('img/newcomb_bottom');
+
+}
+
+
+.green_bar { 
+	height: 200px;
+	background-color: #129660;
+
+}
+
+.green_bar_pre {
+	height: 20px;
+	background-color: #5eb246;
+}
