@@ -90,151 +90,55 @@
 	font-style: italic;
 }
 
-/*
-@font-face{
-	font-family:"Dai Banna SIL";
-	src: url('./fonts/dbsillb.ttf');
-	font-style:italic;
-}
-
-
-@font-face{
-	font-family:"Dai Banna SIL";
-	src: url('./fonts/dbsillb.ttf');
-}
-
-@font-face{
-	font-family:"Dai Banna SIL";
-	src: url('./fonts/dbsillb.ttf');
-}
-*/
-
 body {
 	margin: 0;
-}
-
-h1 {
-	margin: 0;
-	font-family:"Dai Banna SIL";
-	font-style: italic;
-	color: #7b6e4b;
-}
-
-h2 {
-	font-family:"Dai Banna SIL";
-	font-style: italic;
-	color: #7b6e4b;
-}
-
-h3 {
-	color: #7b6e4b;
-}
-
-img {
-	max-width: 100%;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
-p {
-	font-family: Raleway;
-    color: #7b6e4b;
-    font-weight: normal;
-    margin: 0;
 }
 
 #horiz_container{
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    height: 100vh;
 }
 
-#first_section {
+#first_section{
+	display: inline-block;
 	background-image: url('./img/newcomb_bg.jpeg');
-	background-position: fixed;
-
+    background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 80%;
 }
 
-#second_section {
-
-}
-
-#background_top {
+#second_section{
+	display: inline-block;
 	background-image: url('./img/newcomb_bg.jpeg');
-    height: 80vh;
+	height: 100vh;
+	width: 100%;
     background-size: cover;
+    transform: rotateX(180deg);
 }
 
-
-#bottom_section {
-    background-image: url(./img/newcomb_bg.jpeg);
-    background-size: cover;
-   /* display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-    	"image_left titles";
-    	*/
-}
-
-.image_text_left_right{
-	width: 100vw;
-	display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-    	"image_left titles";
-}
-
-.image_left_grid{
-	grid-area: image_left;
-}
-
-.text_right_grid{
-	grid-area: titles;
-}
-
-.leader_logo{
-	padding-top: 20vh;
-}
-
-.brand_id {
-	margin-left: 20vh;
-}
-
-
-.green_bar { 
-	height: 75px;
+.green_bar{
+	height: 100vh;
 	background-color: #129660;
-	width: 100vw;
-
+	width: 75px;
+	display: inline-block;
 }
 
-.green_bar_pre {
-	height: 20px;
+.green_bar_post{
+	height: 100vh;
+	width: 15px;
 	background-color: #5eb246;
+	display: inline-block;
+
 }
 
-.partial_page {
-	width: 40%;
-    padding-left: 10%;
-    padding-top: 5%;
-}
-
-.title_right{
-    margin-top: 30%;
-}
-
-
-@media only screen and (max-width: 850px){
-	.partial_page{
-		width:80%;
-	}
-	.image_text_left_right{
-	    grid-template-columns: 1fr;
-	    grid-template-areas: 
-	    	"image_left"
-	    	"titles";
-	}
-	.text_right_grid{
-		justify-self: center;
-	}
+.swipe_indicator{
+	background-color: grey;
+	width:50px;
+	height:200px;
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%);
+	margin-top: calc(50% - 100px);
+	margin-left: calc(100% - 70px);
 }
