@@ -84,14 +84,64 @@
 	font-style: italic;
 }
 
+@font-face{
+	font-family:"Dai Banna SIL";
+	src: url('./fonts/dbsillo.ttf');
+	font-style: italic;
+}
+
+/*
+@font-face{
+	font-family:"Dai Banna SIL";
+	src: url('./fonts/dbsillb.ttf');
+	font-style:italic;
+}
+
+
+@font-face{
+	font-family:"Dai Banna SIL";
+	src: url('./fonts/dbsillb.ttf');
+}
+
+@font-face{
+	font-family:"Dai Banna SIL";
+	src: url('./fonts/dbsillb.ttf');
+}
+*/
+
 body {
 	margin: 0;
 }
 
 h1 {
-
+	margin: 0;
+	font-family:"Dai Banna SIL";
+	font-style: italic;
+	color: #7b6e4b;
 }
 
+h2 {
+	font-family:"Dai Banna SIL";
+	font-style: italic;
+	color: #7b6e4b;
+}
+
+h3 {
+	color: #7b6e4b;
+}
+
+img {
+	max-width: 100%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+p {
+	font-family: Raleway;
+    color: #7b6e4b;
+    font-weight: normal;
+    margin: 0;
+}
 
 #background_top {
 	background-image: url('./img/newcomb_bg.jpeg');
@@ -100,14 +150,43 @@ h1 {
 }
 
 
-#background_bottom {
-	background-image: url('img/newcomb_bottom');
+#bottom_section {
+    background-image: url(./img/newcomb_bg.jpeg);
+    background-size: cover;
+   /* display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    	"image_left titles";
+    	*/
+}
 
+.image_text_left_right{
+	width: 100vw;
+	display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    	"image_left titles";
+}
+
+.image_left_grid{
+	grid-area: image_left;
+}
+
+.text_right_grid{
+	grid-area: titles;
+}
+
+.leader_logo{
+	padding-top: 20vh;
+}
+
+.brand_id {
+	margin-left: 20vh;
 }
 
 
 .green_bar { 
-	height: 50px;
+	height: 75px;
 	background-color: #129660;
 	width: 100vw;
 
@@ -116,4 +195,30 @@ h1 {
 .green_bar_pre {
 	height: 20px;
 	background-color: #5eb246;
+}
+
+.partial_page {
+	width: 40%;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.title_right{
+    margin-top: 30%;
+}
+
+
+@media only screen and (max-width: 850px){
+	.partial_page{
+		width:80%;
+	}
+	.image_text_left_right{
+	    grid-template-columns: 1fr;
+	    grid-template-areas: 
+	    	"image_left"
+	    	"titles";
+	}
+	.text_right_grid{
+		justify-self: center;
+	}
 }
