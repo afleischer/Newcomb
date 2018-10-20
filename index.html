@@ -6,7 +6,15 @@
 	</head>
 
 
-<body>
+<body onload="loadIn()">
+	<script>
+		//var arrow = document.querySelector('.swipe_indicator');
+		
+		function loadIn(){
+			document.querySelector('.swipe_indicator').classList.add('fadeInAnim');
+		}
+
+	</script>
 	<div id = "horiz_container">
 		<div id = "first_section">
 			<div class = "brand_id">
@@ -26,6 +34,8 @@
 
 
 			<img src ="./img/Linda_portrait_fpo.png" />
+
+			<div class = "second_section_text">
 				<p> AIA Washington Council </p>
 				<br>
 				<p> Licensed Architect with a professional stamp for permitting drawings for cities in Washington State.</p>
@@ -34,6 +44,7 @@
 
 				<p><b>Architecture</b>: Including new construction or remodelling, commercial or residential; as built drawings for existing buildings or home</p>
 				<p><b>Estimating</b> for any project, whether at the beginning of the design phase or when design is complete prior to construction</p>
+			</div>
 
 			
 				<div id = "footer">

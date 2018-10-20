@@ -1,3 +1,14 @@
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-Medium.ttf') format('truetype');
@@ -157,7 +168,12 @@ p {
     background-size: cover;
     /* transform: rotateX(180deg); */
     background-attachment: fixed;
-    z-index: 1;
+    z-index: -1;
+    position: fixed;
+}
+
+#footer{
+    margin-left: 10%;
 }
 
 .leader_logo{
@@ -167,7 +183,7 @@ p {
 .brand_id{
 	align-self: center;
 	margin-right: 2%;
-	position: absolute;
+	/* position: absolute; */
 }
 
 .green_bar{
@@ -193,12 +209,41 @@ p {
 	width:50px;
 	height:200px;
 	clip-path: polygon(50% 0%, 100% 50%, 50% 100%);
-	margin-top: calc(50vh - 100px);
+	/* margin-top: calc(50vh - 100px); */
 	margin-right: 20px;
 	/*margin-left: calc(100% - 70px);*/
-	align-self: center;
+	/* align-self: center; */
+
+	transform: translate(20vh,50vh);
 }
 
 .swipe_buffer{
-	width:100vw;
+	opacity: 0.4;
+    flex: 0 0 auto;
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.second_section_text{
+    width: 60%;
+    margin-left: 10%;	
+}
+
+.fadeInAnim{
+	animation: fadeIn 4s ease-in both;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		/* transform: translate3d(0, -20%, 0);*/
+		transform: translate(0, -20%);
+	}
+	to {
+		opacity: 1;
+		/* transform: translate3d(0, 0, 0); */
+		transform: translate(0, 0);
+	}
 }
