@@ -139,7 +139,7 @@ p {
 	display:flex;
 	flex-wrap: nowrap;
 	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
+	/* -webkit-overflow-scrolling: touch; */
  &::-webkit-scrollbar {
     display: none;
   }
@@ -211,7 +211,7 @@ p {
 	height:200px;
 	/* clip-path: polygon(50% 0%, 100% 50%, 50% 100%); */
 	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 75% 50%);
-	--webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 75% 50%);
+	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 75% 50%);
 	/* margin-top: calc(50vh - 100px); */
 	margin-right: 20px;
 	/*margin-left: calc(100% - 70px);*/
