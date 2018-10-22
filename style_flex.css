@@ -164,12 +164,13 @@ p {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/newcomb_bg.jpeg);
 	/* background-image: url('./img/newcomb_bg.jpeg'); */ 
 	height: 100vh;
-    width: calc(100% - 15px);
+    /*(width: calc(100% - 15px); */
     background-size: cover;
     /* transform: rotateX(180deg); */
     background-attachment: fixed;
     z-index: -1;
     position: fixed;
+    width: 100vw;
 }
 
 #footer{
@@ -210,6 +211,7 @@ p {
 	height:200px;
 	/* clip-path: polygon(50% 0%, 100% 50%, 50% 100%); */
 	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 75% 50%);
+	--webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 75% 50%);
 	/* margin-top: calc(50vh - 100px); */
 	margin-right: 20px;
 	/*margin-left: calc(100% - 70px);*/
@@ -234,6 +236,23 @@ p {
 
 .fadeInAnim{
 	animation: fadeIn 2s ease-in both;
+}
+
+
+
+.image_text_text{
+	display: inline-block;
+	margin: 0;
+}
+
+.image_text_text > h2{
+    display: inline-block;
+    margin: 0;
+}
+
+.image_text_text > h3{
+	display: inline-block;
+    margin: 0;
 }
 
 @keyframes fadeIn {
