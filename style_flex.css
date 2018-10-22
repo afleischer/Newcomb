@@ -205,15 +205,16 @@ p {
 }
 
 .swipe_indicator{
-	background-color: grey;
-	width:50px;
+    background-color: #60b03a;
+    width:50px;
 	height:200px;
-	clip-path: polygon(50% 0%, 100% 50%, 50% 100%);
+	/* clip-path: polygon(50% 0%, 100% 50%, 50% 100%); */
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 75% 50%);
 	/* margin-top: calc(50vh - 100px); */
 	margin-right: 20px;
 	/*margin-left: calc(100% - 70px);*/
-	/* align-self: center; */
-
+    align-self: center;
+    margin-top: calc(50vh - 100px);
 	transform: translate(20vh,50vh);
 }
 
@@ -232,7 +233,7 @@ p {
 }
 
 .fadeInAnim{
-	animation: fadeIn 4s ease-in both;
+	animation: fadeIn 2s ease-in both;
 }
 
 @keyframes fadeIn {
