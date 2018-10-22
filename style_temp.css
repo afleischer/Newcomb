@@ -1,0 +1,167 @@
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+/*
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-MediumRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+}
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face{
+	font-family: "Raleway";
+	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face{
+	font-family:"Dai Banna SIL";
+	src: url('./fonts/dbsillo.ttf');
+	font-style: italic;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+
+}
+
+h3 {
+
+}
+
+#horiz_container{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 100vh;
+}
+
+#first_section{
+	display: inline-block;
+	background-image: url('./img/newcomb_bg.jpeg');
+    background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 80%;
+}
+
+#second_section{
+	display: inline-block;
+	background-image: url('./img/newcomb_bg.jpeg');
+	height: 100vh;
+	width: 100%;
+    background-size: cover;
+    transform: rotateX(180deg);
+}
+
+.brand_id{
+	display: inline-block;
+	transform: translateY(-50%);
+    margin-left: calc(80% - 300px);
+}
+
+.green_bar{
+	height: 100vh;
+	background-color: #129660;
+	width: 75px;
+	display: inline-block;
+}
+
+.green_bar_post{
+	height: 100vh;
+	width: 15px;
+	background-color: #5eb246;
+	display: inline-block;
+
+}
+
+.swipe_indicator{
+	background-color: grey;
+	width:50px;
+	height:200px;
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%);
+	margin-top: calc(50vh - 100px);
+	margin-left: calc(100% - 70px);
+}
+
+.swipe_buffer{
+	opacity: 0.4;
+    flex: 0 0 auto;
+    width: 100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}

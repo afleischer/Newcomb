@@ -143,6 +143,22 @@ p {
     margin: 0;
 }
 
+#horiz_container{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#first_section {
+	background-image: url('./img/newcomb_bg.jpeg');
+	background-position: fixed;
+	
+}
+
+#second_section {
+
+}
+
 #background_top {
 	background-image: url('./img/newcomb_bg.jpeg');
     height: 80vh;
