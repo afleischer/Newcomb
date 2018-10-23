@@ -160,6 +160,7 @@ Loading screen
   border: 5px solid #fff;
   border-color: #fff transparent #fff transparent;
   animation: lds-dual-ring 1.2s linear infinite;
+  color: #129660;
 }
 @keyframes lds-dual-ring {
   0% {
