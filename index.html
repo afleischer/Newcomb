@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
+“http://www.w3.org/TR/html4/strict.dtd">
 <head>
 	<link rel = "stylesheet" type = "text/css" href ="style_flex.css">
 
@@ -7,9 +7,8 @@
 
 
 <body onload="loadIn()">
-
-	<script src = './scripts.js' type = 'module'></script>
-
+	<script src = './scripts/clippath.js' type = 'module'></script>
+	<!-- script src = './scripts.js' type = 'module'></script -->
 	<div id = "loading_screen"> 
 		Loading...
 		<div class="lds-dual-ring"></div>
@@ -36,11 +35,12 @@
 			</div>
 		</div>
 		<div class = "green_bar">
-			<div class = "swipe_indicator"></div>
+			<!--div class = "swipe_indicator"></div-->
+			<img class = "swipe_indicator" src = "./img/indicator_arrow.svg" style = "max-width: 100%;"/>
 		</div>
 		<div class = "green_bar_post"></div>
 
-<div id="second_section">
+	<div id="second_section">
 			<!--div id = "second_section" --> 
 				<div class="image_text_left_right">
 							<div class="partial_page">
@@ -49,8 +49,7 @@
 			<img src="./img/Linda_portrait_fpo.png" style="display: inline-block;">
     
     <div class="image_text_text" style="
-    display: inline-block;
-">
+    display: inline-block;">
                                 <h2 style="
     display: inline-block;
     margin: 0;

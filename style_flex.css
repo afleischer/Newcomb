@@ -312,3 +312,8 @@ Loading screen
 		transform: translate(0, 0);
 	}
 }
+
+@supports (-ms-ime-align:auto) { 
+	.swipe_indicator { 
+	    background-color: transparent;
+}
