@@ -136,12 +136,17 @@ p {
     margin: 0;
 }
 
+#loading_screen{
+	width: 100vw;
+	height: 100vh;
+	
+}
+
 #horiz_container{
 	display:flex;
 	flex-wrap: nowrap;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
-	overflow-scrolling: touch;
  &::-webkit-scrollbar {
     display: none;
   }
