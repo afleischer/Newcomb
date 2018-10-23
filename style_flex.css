@@ -143,7 +143,10 @@ Loading screen
   display: inline-block;
   width: 64px;
   height: 64px;
+  position: absolute;
+  z-index:20;
 }
+
 .lds-dual-ring:after {
   content: " ";
   display: block;
