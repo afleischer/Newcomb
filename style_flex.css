@@ -203,6 +203,12 @@ Loading screen
     justify-content: center;
 }
 
+div#second_section{
+	position: absolute;
+	top:0;
+	left:0;
+}
+
 #second_section{
 	flex: 0 0 auto;
 	display: inline-block;
