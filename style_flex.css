@@ -281,7 +281,7 @@ div#second_section{
 }
 
 .second_section_text{
-    width: 60%;
+    width: 70%;
     margin-left: 10%;	
 }
 
@@ -306,6 +306,11 @@ div#second_section{
     margin: 0;
 }
 
+.footer_logo{
+	margin-top: 2%;
+	width: 150px;
+}
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -322,4 +327,32 @@ div#second_section{
 @supports (-ms-ime-align:auto) { 
 	.swipe_indicator { 
 	    background-color: transparent;
+	}
+}
+
+
+@media screen and (max-height: 800px){
+	#horiz_container, div#second_section, .green_bar, .green_bar_post {
+		height: 750px;
+	}
+	.below_image_container{
+		display: grid;
+		grid-template-areas: 
+		"description footer";
+		grid-template-columns: 1fr 1fr
+	}
+	.second_section_text{
+		grid-area: description;
+	}
+	#footer{
+		grid-area: footer;
+		margin-left: 0%;
+	}
+	div.below_image_container{
+		margin-top: 5%;
+	}
+	img.footer_logo{
+		margin-left: 3%;
+	}
+
 }
