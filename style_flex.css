@@ -111,6 +111,7 @@ h1 {
 	font-family:"Dai Banna SIL";
 	font-style: italic;
 	color: #7b6e4b;
+	font-size: 7vw;
 }
 
 h2 {
@@ -121,6 +122,7 @@ h2 {
 
 h3 {
 	color: #7b6e4b;
+	font-size: 3vw;
 }
 
 img {
@@ -145,7 +147,7 @@ Loading screen
   height: 64px;
   position: absolute;
   z-index:20;
-
+  background-color: #5eb246;
   top: 59px;
   left: 20px;
 }
