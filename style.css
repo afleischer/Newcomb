@@ -404,6 +404,32 @@ div#second_section{
 
 }
 
+@media screen and (max-height: 470px){
+	.second_section_grid_container{
+		display: grid;
+		grid-template-areas: 
+		"image text text footer buffer"
+		"caption text text footer buffer";
+		grid-template-columns: 20% 30% 20% 10% 20%;
+	}
+	.second_section_image{
+		grid-area: image;
+	}
+	.second_section_caption{
+		grid-area: caption;
+		margin-left:10%;
+	}
+	.second_section_text{
+		grid-area: text;
+		font-size: 1.5vw;
+	}
+	#footer{
+		grid-area: footer;
+		font-size: 1.5vw;
+	}
+
+}
+
 
 @media screen and (max-width: 600px) and (min-height: 801px){
 
