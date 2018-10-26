@@ -188,6 +188,7 @@ Loading screen
 #loading_screen{
 	width: 100vw;
 	height: 100vh;
+	background-color: white;
 	
 }
 
