@@ -1,3 +1,7 @@
+:root {
+
+}
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -233,6 +237,7 @@ div#second_section{
     z-index: -1;
     position: fixed;
     width: 100vw;
+    overflow-y: hidden;
 }
 
 #footer{
@@ -303,24 +308,24 @@ div#second_section{
 
 
 
-.image_text_text{
+.second_section_caption{
 	display: inline-block;
 	margin: 0;
 }
 
-.image_text_text > h2{
+.second_section_caption > h2{
     display: inline-block;
     margin: 0;
 }
 
-.image_text_text > h3{
+.second_section_caption > h3{
 	display: inline-block;
     margin: 0;
 }
 
 .footer_logo{
 	margin-top: 2%;
-	width: 150px;
+	width: 80%;
 }
 
 @keyframes fadeIn {
@@ -347,24 +352,80 @@ div#second_section{
 	#horiz_container, div#second_section, .green_bar, .green_bar_post {
 		/* height: 750px; */ 
 	}
-	.below_image_container{
+	.second_section_grid_container{
+		height: 100vh;
 		display: grid;
 		grid-template-areas: 
-		"description footer";
-		grid-template-columns: 1fr 1fr
+		"image caption caption gutter"
+		"description description footer gutter";
+		grid-template-columns: 30% 20% 20% 30%;
+		grid-template-rows: 30% 50%;
 	}
+
+	.second_section_image{
+		grid-area: image;
+	}
+
+	.second_section_caption{
+		grid-area: caption;
+		align-self: center;
+	}
+
 	.second_section_text{
-		grid-area: description;
+		grid-area: description;    
+		font-size: 1.8vw;
+		margin-top: 10%;
+		width: 80%;
 	}
 	#footer{
 		grid-area: footer;
 		margin-left: 0%;
+		align-items: center;
+		align-self: end;
 	}
+	.second_section_image>img{
+	    max-width: 80%;
+	    max-height: 100%;
+	}
+
+	.second_section_caption > h2{
+		font-size: 2vw;
+	}
+
 	div.below_image_container{
 		margin-top: 5%;
 	}
 	img.footer_logo{
 		margin-left: 3%;
+		margin-top: 10%;
+		width: 80%;
+		max-width: 100%
+	}
+
+}
+
+@media screen and (max-height: 470px){
+	.second_section_grid_container{
+		display: grid;
+		grid-template-areas: 
+		"image text text footer buffer"
+		"caption text text footer buffer";
+		grid-template-columns: 20% 30% 20% 10% 20%;
+	}
+	.second_section_image{
+		grid-area: image;
+	}
+	.second_section_caption{
+		grid-area: caption;
+		margin-left:10%;
+	}
+	.second_section_text{
+		grid-area: text;
+		font-size: 1.5vw;
+	}
+	#footer{
+		grid-area: footer;
+		font-size: 1.5vw;
 	}
 
 }
@@ -388,3 +449,61 @@ div#second_section{
 		margin-left: 0%;
 	}
 }
+
+
+/* Smallest size 
+
+320 x 320 until 
+
+*/
+
+
+@media screen and (min-width: 601px) and (min-height: 801px){
+
+	.second_section_grid_container{
+		display: grid;
+		grid-template-areas: 
+		"image caption . gutter"
+		"description description description gutter"
+		"footer . . gutter"
+		". . . .";
+		/* grid-template-rows: 20% . 30%; */
+		grid-template-columns: 30% 20% 20% 20% 10%;
+		height: 100vh;
+	}
+
+	.second_section_image{
+		grid-area: image;
+	}
+
+	.second_section_image>img{
+		max-width: 70%;
+	}
+
+	.second_section_caption{
+		grid-area: caption;
+		align-self: center;
+	}
+
+	.second_section_text{
+		grid-area: description;
+	}
+
+	#footer{
+		grid-area: footer;
+	}
+
+	#footer > img{
+		max-width: 80%;
+		text-align: center;
+		margin-left: 0;
+	}
+
+}
+
+
+
+
+
+
+
