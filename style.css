@@ -1,3 +1,14 @@
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-Medium.ttf') format('truetype');
@@ -90,27 +101,9 @@
 	font-style: italic;
 }
 
-/*
-@font-face{
-	font-family:"Dai Banna SIL";
-	src: url('./fonts/dbsillb.ttf');
-	font-style:italic;
-}
-
-
-@font-face{
-	font-family:"Dai Banna SIL";
-	src: url('./fonts/dbsillb.ttf');
-}
-
-@font-face{
-	font-family:"Dai Banna SIL";
-	src: url('./fonts/dbsillb.ttf');
-}
-*/
-
 body {
 	margin: 0;
+	overflow-y: hidden;
 }
 
 h1 {
@@ -118,6 +111,7 @@ h1 {
 	font-family:"Dai Banna SIL";
 	font-style: italic;
 	color: #7b6e4b;
+	font-size: 3vw;
 }
 
 h2 {
@@ -128,10 +122,11 @@ h2 {
 
 h3 {
 	color: #7b6e4b;
+	font-size: 2vw;
 }
 
 img {
-	max-width: 100%;
+	max-width: 30%;
     margin-left: 10%;
     margin-top: 5%;
 }
@@ -143,98 +138,253 @@ p {
     margin: 0;
 }
 
+/* 
+Loading screen 
+*/
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  z-index:20;
+  background-color: #5eb246;
+  top: 59px;
+  left: 20px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+  color: #129660;
+}
+
+.subtitle{
+	text-align: center;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* end loading screen */
+
+#loading_screen{
+	width: 100vw;
+	height: 100vh;
+	
+}
+
 #horiz_container{
+	display:flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+ &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#first_section{
+	flex: 0 0 auto;
+	display: inline-block;
+	background-image: url('./img/newcomb_bg.jpeg');
+    background-size: cover;
+	background-attachment: fixed;
+	/* height: 100%; */
+	width: 80%;
+	display: flex;
+    /* justify-content: flex-end; */
+    justify-content: center;
+}
+
+.height_hack{
+	height: 100vh;
+}
+
+div#second_section{
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+#second_section{
+	flex: 0 0 auto;
+	display: inline-block;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/newcomb_bg.jpeg);
+	/* background-image: url('./img/newcomb_bg.jpeg'); */ 
+	height: 100vh;
+    /*(width: calc(100% - 15px); */
+    background-size: cover;
+    /* transform: rotateX(180deg); */
+    background-attachment: fixed;
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+}
+
+#footer{
+    margin-left: 10%;
+}
+
+.leader_logo{
+	max-width: 100%;
+	margin: 0;
+}
+
+.brand_id{
+	align-self: center;
+	margin-right: 2%;
+	width: 50vw;
+}
+
+.green_bar{
+	height: 100vh;
+	background-color: #129660;
+	width: 75px;
+	display: inline-block;
+	flex: 0 0 auto;
+	z-index: 2;
+}
+
+.green_bar_post{
+	height: 100vh;
+	width: 15px;
+	background-color: #5eb246;
+	display: inline-block;
+	flex: 0 0 auto;
+	z-index: 2;
+}
+
+.swipe_indicator{
+    background-color: #60b03a;
+    width:50px;
+	height:200px;
+	/* clip-path: polygon(50% 0%, 100% 50%, 50% 100%); */
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 75% 50%);
+	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 75% 50%);
+	/* margin-top: calc(50vh - 100px); */
+	margin-right: 20px;
+	/*margin-left: calc(100% - 70px);*/
+    align-self: center;
+    margin-top: calc(50vh - 100px);
+	transform: translate(20vh,50vh);
+}
+
+.swipe_buffer{
+	opacity: 0.4;
+    flex: 0 0 auto;
+    width: 100vw;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
-#first_section {
-	background-image: url('./img/newcomb_bg.jpeg');
-	background-position: fixed;
-	
+.second_section_text{
+    width: 70%;
+    margin-left: 10%;	
 }
 
-#second_section {
-
-}
-
-#background_top {
-	background-image: url('./img/newcomb_bg.jpeg');
-    height: 80vh;
-    background-size: cover;
+.fadeInAnim{
+	animation: fadeIn 2s ease-in both;
 }
 
 
-#bottom_section {
-    background-image: url(./img/newcomb_bg.jpeg);
-    background-size: cover;
-   /* display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-    	"image_left titles";
-    	*/
+
+.image_text_text{
+	display: inline-block;
+	margin: 0;
 }
 
-.image_text_left_right{
-	width: 100vw;
-	display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-    	"image_left titles";
+.image_text_text > h2{
+    display: inline-block;
+    margin: 0;
 }
 
-.image_left_grid{
-	grid-area: image_left;
+.image_text_text > h3{
+	display: inline-block;
+    margin: 0;
 }
 
-.text_right_grid{
-	grid-area: titles;
+.footer_logo{
+	margin-top: 2%;
+	width: 150px;
 }
 
-.leader_logo{
-	padding-top: 20vh;
-}
-
-.brand_id {
-	margin-left: 20vh;
-}
-
-
-.green_bar { 
-	height: 75px;
-	background-color: #129660;
-	width: 100vw;
-
-}
-
-.green_bar_pre {
-	height: 20px;
-	background-color: #5eb246;
-}
-
-.partial_page {
-	width: 40%;
-    padding-left: 10%;
-    padding-top: 5%;
-}
-
-.title_right{
-    margin-top: 30%;
-}
-
-
-@media only screen and (max-width: 850px){
-	.partial_page{
-		width:80%;
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		/* transform: translate3d(0, -20%, 0);*/
+		transform: translate(0, -20%);
 	}
-	.image_text_left_right{
-	    grid-template-columns: 1fr;
-	    grid-template-areas: 
-	    	"image_left"
-	    	"titles";
+	to {
+		opacity: 1;
+		/* transform: translate3d(0, 0, 0); */
+		transform: translate(0, 0);
 	}
-	.text_right_grid{
-		justify-self: center;
+}
+
+@supports (-ms-ime-align:auto) { 
+	.swipe_indicator { 
+	    background-color: transparent;
+	}
+}
+
+
+@media screen and (max-height: 800px){
+	#horiz_container, div#second_section, .green_bar, .green_bar_post {
+		/* height: 750px; */ 
+	}
+	.below_image_container{
+		display: grid;
+		grid-template-areas: 
+		"description footer";
+		grid-template-columns: 1fr 1fr
+	}
+	.second_section_text{
+		grid-area: description;
+	}
+	#footer{
+		grid-area: footer;
+		margin-left: 0%;
+	}
+	div.below_image_container{
+		margin-top: 5%;
+	}
+	img.footer_logo{
+		margin-left: 3%;
+	}
+
+}
+
+
+@media screen and (max-width: 600px) and (min-height: 801px){
+
+	.below_image_container{
+		display: grid;
+		grid-template-areas: 
+		"description"
+		"footer";
+		grid-template-columns: 1fr 1fr
+	}
+
+	.second_section_text{
+		grid-area: description;
+	}
+	#footer{
+		grid-area: footer;
+		margin-left: 0%;
 	}
 }

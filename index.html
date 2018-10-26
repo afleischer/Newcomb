@@ -1,15 +1,14 @@
 <!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
 “http://www.w3.org/TR/html4/strict.dtd">
 <head>
-	<link rel = "stylesheet" type = "text/css" href ="style_flex.css">
-<!--link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"-->
+	<link rel = "stylesheet" type = "text/css" href ="style.css">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
 
 <body onload="loadIn()">
 	<script src = './scripts/clippath.js' type = 'module'></script>
-	<!-- script src = './scripts.js' type = 'module'></script -->
 	<div id = "loading_screen"> 
 		Loading...
 		<div class="lds-dual-ring"></div>
@@ -19,20 +18,18 @@
 			document.getElementById("loading_screen").style.display = "none";
 		});
 	</script>
-	<script>
-		//var arrow = document.querySelector('.swipe_indicator');
-		
+	<script>		
 		function loadIn(){
+			document.querySelector('#first_section').classList.add('height_hack');
 			document.querySelector('.swipe_indicator').classList.add('fadeInAnim');
-		}
 
+		}
 	</script>
 	<div id = "horiz_container">
 		<div id = "first_section">
 			<div class = "brand_id">
-			<img class = "leader_logo" src = "./img/newcomb_logo.png" />
-				<h1>Newcomb Architecture</h1>
-				<h3>Planning &#8226; Architecture &#8226; Estimating</h3>
+			<img class = "leader_logo" src = "./img/newcomb_logo.svg" />
+				<h3 class = "subtitle">Planning &#8226; Architecture &#8226; Estimating</h3>
 			</div>
 		</div>
 		<div class = "green_bar">
