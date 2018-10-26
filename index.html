@@ -9,11 +9,19 @@
 
 <body onload="loadIn()">
 	<script src = './scripts/clippath.js' type = 'module'></script>
+	<script src = './scripts/mobilecheck.js' type = 'javascript'></script>
 	<div id = "loading_screen"> 
 		Loading...
 		<div class="lds-dual-ring"></div>
 	</div>
 	<script>
+		/*============
+		Load mobile css if mobile browser
+		============*/
+		if(window.mobilecheck === true){
+			document.write('<link rel="stylesheet" type = "text/css" href = "mobile_style.css" />');
+		}
+
 		window.addEventListener("load", ()=> {
 			document.getElementById("loading_screen").style.display = "none";
 		});
