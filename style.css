@@ -194,7 +194,7 @@ Loading screen
 #horiz_container{
 	display:flex;
 	flex-wrap: nowrap;
-	overflow-x: auto;
+	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
  &::-webkit-scrollbar {
     display: none;
