@@ -258,6 +258,10 @@ Loading screen
     z-index: 5;
 }
 
+.first_section_mobile{
+	background-attachment: scroll;
+}
+
 .height_hack{
 	height: 100vh;
 }
@@ -287,6 +291,12 @@ div#second_section{
     position: fixed;
     width: 100vw;
     overflow-y: hidden;
+}
+
+/* Add this to the fixed image to 
+prevent accidentally trying to scroll on it ontouch */
+.second_section_mobile{
+	overflow-x: hidden;
 }
 
 #footer{
@@ -356,6 +366,11 @@ div#second_section{
     /* overflow-x: scroll; */
     overflow-y: hidden;
     white-space: nowrap;
+}
+
+/* Remove the opacity if on mobile; it doesn't render well */
+.swipe_buffer_mobile {
+	opacity: 0.0;
 }
 
 .second_section_text{
