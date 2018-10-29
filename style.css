@@ -297,6 +297,7 @@ div#second_section{
 prevent accidentally trying to scroll on it ontouch */
 .second_section_mobile{
 	overflow-x: hidden;
+	position: relative;
 }
 
 #footer{
@@ -370,7 +371,7 @@ prevent accidentally trying to scroll on it ontouch */
 
 /* Remove the opacity if on mobile; it doesn't render well */
 .swipe_buffer_mobile {
-	opacity: 0.0;
+	display: none;
 }
 
 .second_section_text{
