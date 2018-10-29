@@ -352,7 +352,7 @@ div#second_section{
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 100vw;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     overflow-y: hidden;
     white-space: nowrap;
 }
