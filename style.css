@@ -259,7 +259,7 @@ Loading screen
 }
 
 .first_section_mobile{
-	background-attachment: scroll;
+	background-attachment: scroll !important;
 }
 
 .height_hack{
