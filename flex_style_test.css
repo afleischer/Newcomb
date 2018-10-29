@@ -35,3 +35,11 @@ body {
   min-width: 200px;
   margin: 5px;
 }
+
+.absolute-card--content {
+  background-color: blue;
+  min-width: 200px;
+  margin: 5px;
+  position:absolute;
+  
+}
