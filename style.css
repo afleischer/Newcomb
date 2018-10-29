@@ -281,7 +281,7 @@ div#second_section{
     /* transform: rotateX(180deg); */
     /* background-attachment: fixed; */
     z-index: -1;
-    position: fixed;
+    /* position: fixed; */
     width: 100vw;
     overflow-y: hidden;
 }
