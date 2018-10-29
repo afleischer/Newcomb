@@ -19,7 +19,10 @@
 		/*============
 		Load mobile css if mobile browser
 		============*/
-		if(window.mobilecheck === true){
+		var checkMobile = window.mobilecheck();
+		alert("checkMobile is:"+checkMobile);
+
+		if(checkMobile === true){
 			document.write('<link rel="stylesheet" type = "text/css" href = "mobile_style.css" />');
 			document.write('<script src="./scripts/jquery.scrollify.js">');
 			alert("MOBILE CSS loaded");
@@ -28,7 +31,7 @@
 			});
 		}
 
-		else if (window.mobilecheck === false){
+		else if (checkMobile === false){
 		document.write('<link rel = "stylesheet" type = "text/css" href ="style.css">');
 		alert("Non-mobile CSS loaded");
 		}
@@ -88,9 +91,10 @@
 			</div>
 
 		</div>
-	</div>
 
 	<div class = "swipe_buffer"></div>
+
+		</div>
 
 </body>
 
