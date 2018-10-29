@@ -223,8 +223,10 @@ Loading screen
 
 #horiz_container{
 	display:-webkit-box;
+	display: -webkit-flex;
 	display:-ms-flexbox;
 	display:flex;
+	--webkit-flex-wrap: nowrap;
 	-ms-flex-wrap: nowrap;
 	    flex-wrap: nowrap;
 	overflow-x: scroll;
@@ -242,7 +244,7 @@ Loading screen
 	display: inline-block;
 	background-image: url('./img/newcomb_bg.jpeg');
     background-size: cover;
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
 	/* height: 100%; */
 	width: 80%;
 	display: -webkit-box;
@@ -279,9 +281,9 @@ div#second_section{
     /*(width: calc(100% - 15px); */
     background-size: cover;
     /* transform: rotateX(180deg); */
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     z-index: -1;
-    /* position: fixed; */
+    position: fixed;
     width: 100vw;
     overflow-y: hidden;
 }

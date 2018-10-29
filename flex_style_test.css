@@ -34,6 +34,7 @@ body {
   background-color: #e74c3c;
   min-width: 200px;
   margin: 5px;
+  background-image: url('./img/Linda - FPO.png');
 }
 
 .absolute-card--content {
@@ -41,5 +42,7 @@ body {
   min-width: 200px;
   margin: 5px;
   position:absolute;
-  
+  height: 200px;
+  right: 0;
+  z-index: -1;
 }
