@@ -585,6 +585,13 @@ prevent accidentally trying to scroll on it ontouch */
 	}
 }
 
+@media screen and (max-width: 600px){
+	.second_section_caption, #footer{
+		margin-left: 10%;
+	}
+
+}
+
 
 /* Smallest size 
 
