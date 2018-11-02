@@ -306,7 +306,7 @@ prevent accidentally trying to scroll on it ontouch */
 	/* overflow-x: hidden;  */
 	/* position: relative; */
 	position: relative;
-
+	background-attachment: scroll !important;
 
 	display: flex;
 
@@ -586,6 +586,7 @@ prevent accidentally trying to scroll on it ontouch */
 }
 
 @media screen and (max-width: 600px){
+	
 	.second_section_caption, #footer{
 		margin-left: 10%;
 	}
