@@ -386,7 +386,7 @@ prevent accidentally trying to scroll on it ontouch */
 /* Remove the opacity if on mobile; it doesn't render well */
 
 /* was previously display: none; */
-.swipe_buffer_mobile {
+.swipe_buffer_mobile{
 	display: none;
 }
 
