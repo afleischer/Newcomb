@@ -232,7 +232,10 @@ Loading screen
 	--webkit-flex-wrap: nowrap;
 	-ms-flex-wrap: nowrap;
 	    flex-wrap: nowrap;
-	overflow-x: scroll;
+	
+	
+	/* overflow-x: scroll; */
+	overflow-x: hidden;
 	overflow-y: hidden;
 	z-index: 20;
 }
