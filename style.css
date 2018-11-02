@@ -921,3 +921,34 @@ prevent accidentally trying to scroll on it ontouch */
 		grid-area: description;
 	}
 }
+@media screen and (max-width: 740px) and (max-height: 800px){
+	.second_section_grid_container{
+		    grid-template-areas: 
+		    "image image . gutter" 
+		    "caption caption . gutter"
+		    "description description description gutter"
+		    "footer wide-text . .";
+		    grid-template-rows: 30% 5% 40% 15%;
+	}
+
+	#footer{
+		display: flex;
+	}
+	#footer > .wide_text{
+		grid-area: wide-text;
+	}
+
+	.second_section_image{
+		height: 100%;
+	}
+
+	.second_section_text{
+		font-size: 70%;
+	}
+}
+
+@media screen and (max-height: 735px) and (max-width: 740px){
+	.second_section_text{
+		grid-area: description;
+	}	
+}
