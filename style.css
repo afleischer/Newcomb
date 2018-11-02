@@ -184,7 +184,7 @@ Loading screen
   margin: 1px;
   border-radius: 50%;
   border: 5px solid #fff;
-  border-color: #fff transparent #fff transparent;
+  border-color: var(--dark-Newcomb-green) transparent var(--dark-Newcomb-green) transparent;
   -webkit-animation: lds-dual-ring 1.2s linear infinite;
           animation: lds-dual-ring 1.2s linear infinite;
   color: var(--light-Newcomb-green);
