@@ -259,7 +259,7 @@ Loading screen
     z-index: 5;
 
     /* */
-    overflow-x: scroll;
+    overflow-x: hidden;
 }
 
 .first_section_mobile{
