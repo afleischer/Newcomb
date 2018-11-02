@@ -305,7 +305,7 @@ prevent accidentally trying to scroll on it ontouch */
 	overflow-x: scroll;
 	/* overflow-x: hidden;  */
 	/* position: relative; */
-	position: relative;
+	position: relative !important;
 	background-attachment: scroll !important;
 
 	display: flex;
@@ -385,6 +385,7 @@ prevent accidentally trying to scroll on it ontouch */
 
 /* was previously display: none; */
 .swipe_buffer_mobile {
+	display: none;
 }
 
 .second_section_text{
