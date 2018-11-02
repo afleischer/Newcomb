@@ -498,7 +498,6 @@ prevent accidentally trying to scroll on it ontouch */
 	}
 
 	.second_section_caption > h2{
-		font-size: 2vw;
 	}
 
 	div.below_image_container{
@@ -936,6 +935,11 @@ prevent accidentally trying to scroll on it ontouch */
 	}
 	#footer > .wide_text{
 		grid-area: wide-text;
+	}
+	.second_section_caption{
+		max-height: 100%;
+		padding-top: 10%;
+    	padding-left: 10%;
 	}
 
 	.second_section_image{
