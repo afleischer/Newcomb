@@ -170,6 +170,10 @@ Loading screen
   background-color: var(--dark-Newcomb-green);
   top: 59px;
   left: 20px;
+
+  position: absolute;
+  top: 40vh;
+  left: 40vh;
 }
 
 .lds-dual-ring:after {
