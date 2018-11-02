@@ -167,7 +167,7 @@ Loading screen
   height: 64px;
   position: absolute;
   z-index:20;
-  background-color: var(--dark-Newcomb-green);
+  background-color: white;
   top: 59px;
   left: 20px;
 
