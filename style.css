@@ -573,7 +573,7 @@ prevent accidentally trying to scroll on it ontouch */
 	}
 	#footer{
 		grid-area: footer;
-		margin-left: 0%;
+		margin-left: 30%;
 	}
 
 	.below_image_container > .second_section_text{
