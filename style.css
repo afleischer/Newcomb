@@ -939,7 +939,7 @@ prevent accidentally trying to scroll on it ontouch */
 	}
 	.second_section_caption{
 		max-height: 100%;
-		margin-top: 5%;
+		/* margin-top: 5%;*/ 
     	padding-left: 10%;
 	}
 
