@@ -928,7 +928,7 @@ prevent accidentally trying to scroll on it ontouch */
 		    "caption caption . gutter"
 		    "description description description gutter"
 		    "footer wide-text . .";
-		    grid-template-rows: 30% 5% 40% 15%;
+		    grid-template-rows: 25% 10% 40% 15%;
 	}
 
 	#footer{
