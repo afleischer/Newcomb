@@ -15,31 +15,6 @@
 		<div class="lds-dual-ring"></div>
 	</div>
 	<script>
-		/*============
-		Load mobile css if mobile browser
-		============*/
-
-		/* 
-		var checkMobile = window.mobilecheck();
-		alert("checkMobile is:"+checkMobile);
-
-		if(checkMobile === true){
-			document.write('<link rel="stylesheet" type = "text/css" href = "mobile_style.css" />');
-			document.write('<script src="./scripts/jquery.scrollify.js">');
-			alert("MOBILE CSS loaded");
-			$('.swipe_indicator').click(function(){
-				$.scrollify.move("meet_linda");
-			});
-		}
-
-		else if (checkMobile === false){
-		document.write('<link rel = "stylesheet" type = "text/css" href ="style.css">');
-		alert("Non-mobile CSS loaded");
-		}
-		*/
-
-
-
 		window.addEventListener("load", function(){
 			document.getElementById("loading_screen").style.display = "none";
 		});	
@@ -60,11 +35,11 @@
 				<h3 class = "subtitle">Planning &#8226; Architecture &#8226; Estimating</h3>
 			</div>
 		</div>
+		<div class = "green_bar_post"></div>		
 		<div class = "green_bar">
 			<!--div class = "swipe_indicator"></div-->
 			<img class = "swipe_indicator" src = "./img/indicator_arrow.svg" style = "max-width: 100%;" alt="Newcomb Logo" />
 		</div>
-		<div class = "green_bar_post"></div>
 
 		<div id="second_section" class = "card" data-section-name="meet_linda">
 			<div class="second_section_grid_container">

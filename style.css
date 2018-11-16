@@ -42,6 +42,7 @@
 	font-weight: normal;
 	font-style: italic;
 }
+
 /*
 @font-face{
 	font-family: "Raleway";
@@ -50,6 +51,7 @@
 	font-style: normal;
 }
 */
+
 
 @font-face{
 	font-family: "Raleway";
@@ -193,6 +195,8 @@ Loading screen
 
 .subtitle{
 	text-align: center;
+	font-weight: normal;
+	font-style: normal;
 }
 
 @-webkit-keyframes lds-dual-ring {
