@@ -499,7 +499,7 @@ prevent accidentally trying to scroll on it ontouch */
 	}
 	.second_section_image>img{
 	    max-width: 80%;
-	    max-height: 100%;
+	    max-height: 90%;
 	}
 
 	.second_section_caption > h2{
