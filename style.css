@@ -153,9 +153,9 @@ h3 {
 }
 
 img {
-	max-width: 30%;
+	max-width: 100%;
 	/* margin-left: 10%; */
-	margin-top: 5%;
+	/* margin-top: 5%; */
 }
 
 p {
@@ -457,17 +457,15 @@ prevent accidentally trying to scroll on it ontouch */
 		/* height: 750px; */ 
 	}
 	.second_section_grid_container{
-		height: 100vh;
+		height: 98vh;
 		display: -ms-grid;
 		display: grid;
-		grid-template-areas: 
-		"image caption caption gutter"
-		"description description footer gutter";
-		-ms-grid-columns: 30% 20% 20% 30%;
-		grid-template-columns: 30% 20% 20% 30%;
+		grid-template-areas: "image caption caption gutter"   "description description description ."  "footer . . .";
+		grid-template-columns: 20% 20% 20% 10%;
 		-ms-grid-rows: 30% 50%;
-		grid-template-rows: 30% 50%;
+		grid-template-rows: 30% auto auto;
 		margin-left: 5%;
+		margin-top: 2vh;
 	}
 
 	.second_section_image{
@@ -482,9 +480,9 @@ prevent accidentally trying to scroll on it ontouch */
 	}
 
 	.second_section_text{
-		grid-area: description;    
+		grid-area: description;
 		font-size: 1.8vw;
-		margin-top: 10%;
+		/* margin-top: 10%; */
 		width: 80%;
 	}
 	#footer{
@@ -498,11 +496,13 @@ prevent accidentally trying to scroll on it ontouch */
 		    align-self: end;
 	}
 	.second_section_image>img{
-	    max-width: 80%;
-	    max-height: 90%;
+	    /* max-width: 80%; */
+	    /* max-height: 90%; */
 	}
 
 	.second_section_caption > h2{
+	font-family: "Raleway";
+	font-style: normal;
 	}
 
 	div.below_image_container{
