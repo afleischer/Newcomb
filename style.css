@@ -497,7 +497,7 @@ prevent accidentally trying to scroll on it ontouch */
 	}
 	.second_section_image>img{
 	    /* max-width: 80%; */
-	    /* max-height: 90%; */
+	    max-height: 100%;
 	}
 
 	.second_section_caption > h2{
@@ -512,7 +512,8 @@ prevent accidentally trying to scroll on it ontouch */
 		margin-left: 3%;
 		margin-top: 10%;
 		width: 80%;
-		max-width: 100%
+		max-width: 180%;
+		width: 991px;
 	}
 
 }
@@ -599,7 +600,7 @@ prevent accidentally trying to scroll on it ontouch */
 @media screen and (max-width: 600px){
 	
 	.second_section_caption, #footer{
-		margin-left: 10%;
+		/* margin-left: 10%; */
 	}
 
 }
@@ -932,7 +933,7 @@ prevent accidentally trying to scroll on it ontouch */
 		    "caption caption . gutter"
 		    "description description description gutter"
 		    "footer wide-text . .";
-		    grid-template-rows: 25% 10% 40% 15%;
+		    grid-template-rows: 25% 10% 45% 15%;
 	}
 
 	#footer{
