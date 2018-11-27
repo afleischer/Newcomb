@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/afleischer/Newcomb#readme",
   "devDependencies": {
-    "clip-path": "^1.1.0"
+    "clip-path": "^1.1.0",
+    "jest-browser": "^0.1.0"
   }
 }
