@@ -469,13 +469,13 @@ prevent accidentally trying to scroll on it ontouch */
 
 @media screen and (max-height: 800px){
 	#horiz_container, div#second_section, .green_bar, .green_bar_post {
-		/* height: 750px; */ 
+		/* height: 750px; */
 	}
 	.second_section_grid_container{
 		height: 98vh;
 		display: -ms-grid;
 		display: grid;
-		grid-template-areas: "image caption caption gutter"   "description description description ."  "footer . . .";
+		grid-template-areas: "image caption caption gutter"   "description description description ."  "footer wide-text . .";
 		grid-template-columns: 20% 20% 20% 10%;
 		-ms-grid-rows: 30% 50%;
 		grid-template-rows: 30% auto auto;
@@ -503,12 +503,12 @@ prevent accidentally trying to scroll on it ontouch */
 	#footer{
 		grid-area: footer;
 		margin-left: 0%;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		/* -webkit-box-align: center; */
+		-ms-flex-align: center;
+		/* align-items: center; */
 		-ms-flex-item-align: end;
-		    -ms-grid-row-align: end;
-		    align-self: end;
+		-ms-grid-row-align: end;
+		/* align-self: end; */
 	}
 	.second_section_image>img{
 	    /* max-width: 80%; */
@@ -526,8 +526,8 @@ prevent accidentally trying to scroll on it ontouch */
 	img.footer_logo{
 		margin-left: 3%;
 		margin-top: 10%;
-		width: 80%;
-		max-width: 180%;
+		/* width: 80%; */
+		/* max-width: 180%; */
 		width: 991px;
 	}
 
@@ -896,11 +896,11 @@ prevent accidentally trying to scroll on it ontouch */
 
 @media screen and (max-height: 680px){
 	.second_section_text{
-		font-size: 1.5vw;
+		font-size: 1.3vw;
 	}
 }
 
-@media screen and (min-width: 1520px){
+@media screen and (min-width: 1178px){
 
 	.second_section_grid_container{
 		grid-template-areas: 
@@ -913,7 +913,7 @@ prevent accidentally trying to scroll on it ontouch */
 		font-size: 1vw;
 	}
 	#footer {
-		display: flex;
+		/* display: flex; */
 	}
 	#footer > img{
 
