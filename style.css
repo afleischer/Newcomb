@@ -29,31 +29,43 @@
 	}
 }
 
+
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-Medium.ttf') format('truetype');
+	src: url('./fonts/Raleway-Medium.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face{
 	font-family: "Raleway";
+	src: url('./fonts/Raleway-Bold.ttf') format('truetype');
+	src: url('./fonts/Raleway-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Raleway";
 	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
 	font-weight: normal;
 	font-style: italic;
 }
-/*
+
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-MediumRegular.ttf') format('truetype');
+	src: url('./fonts/Raleway-MediumRegular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
-*/
 
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
 }
@@ -61,6 +73,7 @@
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
 	font-weight: 600;
 	font-style: italic;
 }
@@ -68,49 +81,50 @@
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
 	font-weight: 300;
 	font-style: italic;
 }
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
 	font-weight: 100;
 	font-style: normal;
 }
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
 	font-weight: 100;
 	font-style: italic;
 }
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-@font-face{
-	font-family: "Raleway";
-	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
-	font-weight: bold;
+	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
+	font-weight: medium;
 	font-style: italic;
 }
 
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face{
 	font-family: "Raleway";
 	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
+	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
 	font-weight: 800;
 	font-style: italic;
 }
@@ -118,7 +132,8 @@
 @font-face{
 	font-family:"Dai Banna SIL";
 	src: url('./fonts/dbsillo.ttf');
-	font-style: italic;
+	src: url('./fonts/dbsillo.ttf');
+woffnt-stywoffic;
 }
 
 body {
@@ -143,21 +158,27 @@ h2 {
 h3 {
 	color: #7b6e4b;
 	font-size: 2vw;
+	font-family: "Raleway";
 }
 
 img {
-	max-width: 30%;
-    margin-left: 10%;
-    margin-top: 5%;
+	max-width: 100%;
+	/* margin-left: 10%; */
+	/* margin-top: 5%; */
 }
 
 p {
-	font-family: Raleway;
+	font-family: "Raleway";
     color: #7b6e4b;
     font-weight: normal;
     margin: 0;
 }
 
+bulleted {
+	font-family: "Raleway";
+    color: #7b6e4b;
+    font-weight: bold !important;
+}
 /* 
 Loading screen 
 */
@@ -167,9 +188,13 @@ Loading screen
   height: 64px;
   position: absolute;
   z-index:20;
-  background-color: var(--dark-Newcomb-green);
+  background-color: white;
   top: 59px;
   left: 20px;
+
+  position: absolute;
+  top: 40vh;
+  left: 47vw;
 }
 
 .lds-dual-ring:after {
@@ -180,7 +205,7 @@ Loading screen
   margin: 1px;
   border-radius: 50%;
   border: 5px solid #fff;
-  border-color: #fff transparent #fff transparent;
+  border-color: var(--dark-Newcomb-green) transparent var(--dark-Newcomb-green) transparent;
   -webkit-animation: lds-dual-ring 1.2s linear infinite;
           animation: lds-dual-ring 1.2s linear infinite;
   color: var(--light-Newcomb-green);
@@ -188,6 +213,8 @@ Loading screen
 
 .subtitle{
 	text-align: center;
+	font-weight: normal;
+	font-style: normal;
 }
 
 @-webkit-keyframes lds-dual-ring {
@@ -229,37 +256,37 @@ Loading screen
 	display:flex;
 	--webkit-flex-wrap: nowrap;
 	-ms-flex-wrap: nowrap;
-	    flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	/* overflow-x: scroll; */
 	overflow-x: scroll;
 	overflow-y: hidden;
 	z-index: 20;
 	-webkit-overflow-scrolling: touch;
- &::-webkit-scrollbar {
-    display: none;
-  }
+	height: 100vh;
 }
 
 #first_section{
 	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 auto;
-	        flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
 	display: inline-block;
 	background-image: url('./img/newcomb_bg.jpeg');
-    background-size: cover;
+	background-size: cover;
 	background-attachment: fixed;
 	/* height: 100%; */
 	width: 80%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-    /* justify-content: flex-end; */
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    z-index: 5;
+	/* justify-content: flex-end; */
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	z-index: 5;
 
     /* */
-    overflow-x: scroll;
+	overflow-x: hidden;
+	height: 100vh;
 }
 
 .first_section_mobile{
@@ -279,24 +306,25 @@ div#second_section{
 
 #second_section{
 	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 auto;
-	        flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
 	display: inline-block;
 	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0)), to(#dfd8c0)),url(./img/newcomb_bg.jpeg);
-	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/newcomb_bg.jpeg);
-	background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/newcomb_bg.jpeg);
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/newcomb_bg.jpeg);
-	/* background-image: url('./img/newcomb_bg.jpeg'); */ 
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/nc_background_2.jpg);
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/nc_background_2.jpg);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/nc_background_2.jpg);
+	/* 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/newcomb_bg.jpeg); */
+	/* background-image: url('./img/newcomb_bg.jpeg'); */
 	height: 100vh;
     /*(width: calc(100% - 15px); */
-    background-size: cover;
-    /* transform: rotateX(180deg); */
-    background-attachment: fixed;
-    z-index: -1;
-    position: fixed;
-    width: 100vw;
-    overflow-y: hidden;
-
+	background-size: cover;
+	/* transform: rotateX(180deg); */
+	background-attachment: fixed;
+	z-index: -1;
+	position: fixed;
+	width: 100vw;
+	overflow-y: hidden;
+	background-position: right center;
 }
 
 /* Add this to the fixed image to 
@@ -305,8 +333,8 @@ prevent accidentally trying to scroll on it ontouch */
 	overflow-x: scroll;
 	/* overflow-x: hidden;  */
 	/* position: relative; */
-	position: relative;
-
+	position: relative !important;
+	background-attachment: scroll !important;
 
 	display: flex;
 
@@ -319,15 +347,10 @@ prevent accidentally trying to scroll on it ontouch */
 .leader_logo{
 	max-width: 100%;
 	margin: 0;
+	max-height: 40vh;
 }
 
-.brand_id{
-	-ms-flex-item-align: center;
-	    -ms-grid-row-align: center;
-	    align-self: center;
-	margin-right: 2%;
-	width: 50vw;
-}
+.brand_id{-ms-grid-row-align: center;align-self: center;margin-right: 2%;width: 50vw;transform: translate(25%,20%);}
 
 .green_bar{
 	height: 100vh;
@@ -384,12 +407,14 @@ prevent accidentally trying to scroll on it ontouch */
 /* Remove the opacity if on mobile; it doesn't render well */
 
 /* was previously display: none; */
-.swipe_buffer_mobile {
+.swipe_buffer_mobile{
+	display: none;
 }
 
 .second_section_text{
-    width: 70%;
-    margin-left: 10%;	
+    /* width: 70%; */
+    line-height: 1.5;
+    /* margin-left: 10%; */
 }
 
 .fadeInAnim{
@@ -407,6 +432,8 @@ prevent accidentally trying to scroll on it ontouch */
 .second_section_caption > h2{
     display: inline-block;
     margin: 0;
+    font-family: "Raleway";
+    font-style: normal;
 }
 
 .second_section_caption > h3{
@@ -443,19 +470,18 @@ prevent accidentally trying to scroll on it ontouch */
 
 @media screen and (max-height: 800px){
 	#horiz_container, div#second_section, .green_bar, .green_bar_post {
-		/* height: 750px; */ 
+		/* height: 750px; */
 	}
 	.second_section_grid_container{
-		height: 100vh;
+		height: 98vh;
 		display: -ms-grid;
 		display: grid;
-		    grid-template-areas: 
-		"image caption caption gutter"
-		"description description footer gutter";
-		-ms-grid-columns: 30% 20% 20% 30%;
-		grid-template-columns: 30% 20% 20% 30%;
+		grid-template-areas: "image caption caption gutter"   "description description description ."  "footer wide-text . .";
+		grid-template-columns: 20% 20% 20% 10%;
 		-ms-grid-rows: 30% 50%;
-		grid-template-rows: 30% 50%;
+		grid-template-rows: 30% auto auto;
+		margin-left: 5%;
+		margin-top: 2vh;
 	}
 
 	.second_section_image{
@@ -470,28 +496,29 @@ prevent accidentally trying to scroll on it ontouch */
 	}
 
 	.second_section_text{
-		grid-area: description;    
+		grid-area: description;
 		font-size: 1.8vw;
-		margin-top: 10%;
-		width: 80%;
+		/* margin-top: 10%; */
+		/* width: 80%; */
 	}
 	#footer{
 		grid-area: footer;
 		margin-left: 0%;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		/* -webkit-box-align: center; */
+		-ms-flex-align: center;
+		/* align-items: center; */
 		-ms-flex-item-align: end;
-		    -ms-grid-row-align: end;
-		    align-self: end;
+		-ms-grid-row-align: end;
+		/* align-self: end; */
 	}
 	.second_section_image>img{
-	    max-width: 80%;
+	    /* max-width: 80%; */
 	    max-height: 100%;
 	}
 
 	.second_section_caption > h2{
-		font-size: 2vw;
+	font-family: "Raleway";
+	font-style: normal;
 	}
 
 	div.below_image_container{
@@ -500,8 +527,9 @@ prevent accidentally trying to scroll on it ontouch */
 	img.footer_logo{
 		margin-left: 3%;
 		margin-top: 10%;
-		width: 80%;
-		max-width: 100%
+		/* width: 80%; */
+		/* max-width: 180%; */
+		width: 991px;
 	}
 
 }
@@ -563,10 +591,11 @@ prevent accidentally trying to scroll on it ontouch */
 
 	.second_section_text{
 		grid-area: description;
+		padding: 0 35px;
 	}
 	#footer{
 		grid-area: footer;
-		margin-left: 0%;
+		/* margin-left: 30%; */
 	}
 
 	.below_image_container > .second_section_text{
@@ -586,8 +615,16 @@ prevent accidentally trying to scroll on it ontouch */
 }
 
 @media screen and (max-width: 600px){
+	
 	.second_section_caption, #footer{
-		margin-left: 10%;
+		/* margin-left: 10%; */
+		margin: auto;
+		padding: 5px 35px;
+	}
+
+	.second_section_image{
+		max-width: 50%;
+		margin: auto;
 	}
 
 }
@@ -605,7 +642,7 @@ prevent accidentally trying to scroll on it ontouch */
 	.second_section_grid_container{
 		display: -ms-grid;
 		display: grid;
-		    grid-template-areas: 
+		grid-template-areas: 
 		"image caption . gutter"
 		"description description description gutter"
 		"footer . . gutter"
@@ -614,6 +651,7 @@ prevent accidentally trying to scroll on it ontouch */
 		-ms-grid-columns: 30% 20% 20% 20% 10%;
 		grid-template-columns: 30% 20% 20% 20% 10%;
 		height: 100vh;
+		margin-left: 5%;
 	}
 
 	.second_section_image{
@@ -809,11 +847,12 @@ prevent accidentally trying to scroll on it ontouch */
 }
 
 
-@media screen and (min-width: 601px) and (min-height: 801px) {
+@media screen and (min-height: 801px) and (min-width: 601px) {
 
 	.second_section_image{
 		-ms-grid-row: 1;
 		-ms-grid-column: 1;
+		margin: auto;
 	}
 
 	.second_section_caption{
@@ -868,11 +907,11 @@ prevent accidentally trying to scroll on it ontouch */
 
 @media screen and (max-height: 680px){
 	.second_section_text{
-		font-size: 1.5vw;
+		font-size: 1.3vw;
 	}
 }
 
-@media screen and (min-width: 1520px){
+@media screen and (min-width: 1178px){
 
 	.second_section_grid_container{
 		grid-template-areas: 
@@ -885,7 +924,7 @@ prevent accidentally trying to scroll on it ontouch */
 		font-size: 1vw;
 	}
 	#footer {
-		display: flex;
+		/* display: flex; */
 	}
 	#footer > img{
 
@@ -912,4 +951,37 @@ prevent accidentally trying to scroll on it ontouch */
 	.second_section_text{
 		grid-area: description;
 	}
+}
+@media screen and (max-width: 740px) and (max-height: 800px){
+	.second_section_grid_container{
+		    grid-template-areas: "image image . gutter"        "caption caption . gutter"       "description description description description"       "footer wide-text . .";
+		    grid-template-rows: 25% 15% 35% 15%;
+	}
+
+	#footer{
+		display: flex;
+	}
+	#footer > .wide_text{
+		grid-area: wide-text;
+		align-self: center;
+	}
+	.second_section_caption{
+		max-height: 100%;
+		/* margin-top: 5%;*/
+		/* padding-left: 10%; */
+	}
+
+	.second_section_image{
+		height: 100%;
+	}
+
+	.second_section_text{
+		font-size: 70%;
+	}
+}
+
+@media screen and (max-height: 735px) and (max-width: 740px){
+	.second_section_text{
+		grid-area: description;
+	}	
 }
