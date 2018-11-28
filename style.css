@@ -282,8 +282,7 @@ Loading screen
 	-ms-flex-pack: center;
 	justify-content: center;
 	z-index: 5;
-
-    /* */
+	/* */
 	overflow-x: hidden;
 	height: 100vh;
 }
@@ -308,14 +307,14 @@ div#second_section{
 	-ms-flex: 0 0 auto;
 	flex: 0 0 auto;
 	display: inline-block;
-	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0)), to(#dfd8c0)),url(./img/newcomb_bg.jpeg);
-	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/nc_background_2.jpg);
-	background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/nc_background_2.jpg);
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/nc_background_2.jpg);
+	/* background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0)), to(#dfd8c0)), url(./img/newcomb_bg.jpeg); */
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0), #dfd8c0), url(./img/nc_background_2.jpg);
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0), #dfd8c0), url(./img/nc_background_2.jpg);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), #dfd8c0), url(./img/nc_background_2.jpg);
 	/* 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), #dfd8c0),url(./img/newcomb_bg.jpeg); */
 	/* background-image: url('./img/newcomb_bg.jpeg'); */
 	height: 100vh;
-    /*(width: calc(100% - 15px); */
+	/*(width: calc(100% - 15px); */
 	background-size: cover;
 	/* transform: rotateX(180deg); */
 	background-attachment: fixed;
@@ -477,13 +476,13 @@ prevent accidentally trying to scroll on it ontouch */
 		height: 98vh;
 		display: -ms-grid;
 		display: grid;
-		grid-template-areas: "image caption caption gutter"   "description description description ."  "footer wide-text . .";
+		grid-template-areas: "image caption caption gutter" "description description description ." "footer wide-text . .";
 		grid-template-columns: 20% 20% 20% 10%;
 		-ms-grid-rows: 30% 50%;
 		grid-template-rows: 30% auto auto;
 		margin-left: 5%;
 		margin-top: 2vh;
-	}
+}
 
 	.second_section_image{
 		grid-area: image;
@@ -986,3 +985,4 @@ prevent accidentally trying to scroll on it ontouch */
 		grid-area: description;
 	}	
 }
+
