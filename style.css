@@ -80,8 +80,8 @@
 
 @font-face{
 	font-family: "Raleway";
-	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
-	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
+	src: url('./fonts/Raleway-Light.ttf') format('truetype');
+	src: url('./fonts/Raleway-Light.woff') format('woff');
 	font-weight: 300;
 	font-style: normal;
 }
@@ -94,15 +94,15 @@
 }
 @font-face{
 	font-family: "Raleway";
-	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
-	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
+	src: url('./fonts/Raleway-Thin.ttf') format('truetype');
+	src: url('./fonts/Raleway-Thin.woff') format('woff');
 	font-weight: 100;
 	font-style: normal;
 }
 @font-face{
 	font-family: "Raleway";
-	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
-	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
+	src: url('./fonts/Raleway-ThinItalic.ttf') format('truetype');
+	src: url('./fonts/Raleway-ThinItalic.woff') format('woff');
 	font-weight: 100;
 	font-style: italic;
 }
@@ -116,15 +116,15 @@
 
 @font-face{
 	font-family: "Raleway";
-	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
-	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
+	src: url('./fonts/Raleway-Bold.ttf') format('truetype');
+	src: url('./fonts/Raleway-Bold.woff') format('woff');
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face{
 	font-family: "Raleway";
-	src: url('./fonts/Raleway-MediumItalic.ttf') format('truetype');
-	src: url('./fonts/Raleway-MediumItalic.woff') format('woff');
+	src: url('./fonts/Raleway-BoldItalic.ttf') format('truetype');
+	src: url('./fonts/Raleway-BoldItalic.woff') format('woff');
 	font-weight: 800;
 	font-style: italic;
 }
@@ -133,7 +133,6 @@
 	font-family:"Dai Banna SIL";
 	src: url('./fonts/dbsillo.ttf');
 	src: url('./fonts/dbsillo.ttf');
-woffnt-stywoffic;
 }
 
 body {
@@ -427,6 +426,8 @@ prevent accidentally trying to scroll on it ontouch */
 .second_section_caption{
 	display: inline-block;
 	margin: 0;
+	font-weight: 200;
+
 }
 
 .second_section_caption > h2{
