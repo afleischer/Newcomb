@@ -618,13 +618,13 @@ prevent accidentally trying to scroll on it ontouch */
 	
 	.second_section_caption, #footer{
 		/* margin-left: 10%; */
-		/* margin: auto; */
-		/* padding: 5px 35px; */
+		 margin: auto; 
+		 padding: 5px 35px; 
 	}
 
 	.second_section_image{
-		/* max-width: 50%; */
-		/* margin: auto; */
+		 max-width: 50%; 
+		 margin: auto; 
 	}
 
 }
@@ -955,14 +955,14 @@ prevent accidentally trying to scroll on it ontouch */
 @media screen and (max-width: 740px) and (max-height: 800px){
 	.second_section_grid_container{
 		    grid-template-areas: "image image . gutter"        "caption caption . gutter"       "description description description description"       "footer wide-text . .";
-		    grid-template-rows: 20% 15% 30% 15%;
+		    grid-template-rows: 25% 15% 35% 15%;
 	}
 
 	#footer{
 		display: flex;
 	}
 	#footer > .wide_text{
-		/* grid-area: wide-text; */
+		 grid-area: wide-text;
 		align-self: center;
 	}
 	.second_section_caption{
