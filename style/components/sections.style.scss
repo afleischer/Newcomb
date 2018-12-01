@@ -1,0 +1,114 @@
+
+.cover-container {
+  width: 85vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(0, 0);
+  transition: all 0.6s ease-in-out;
+
+  &.opened {
+    transform: translate(-100%, 0);
+  }
+}
+
+.sub-title {
+  font-size: 1.4em;
+  font-family: $font-family-text;
+  color: $font-text-color;
+  text-align: center;
+}
+
+.vertical-button {
+  background: $color-primary;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 85vw;
+  cursor: pointer;
+  width: 5rem;
+  border-left: $color-accent 9px solid;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+
+  .chevron-wrapper {
+    height: 4rem;
+    width: 4rem;
+
+    svg#icon-chevron-right {
+      fill: $color-accent;
+    }
+  }
+}
+
+.cover-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  align-items: center;
+  width: 85vw;
+  height: 100vh;
+  background: url("../static/images/bg-cover.jpg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo-wrapper {
+  width: 70%;
+}
+
+.personal, .blurb, .services, .details {
+  color: $font-text-color;
+  font-family: "Raleway";
+}
+
+@media (max-width: 561px) {
+  .logo-wrapper {
+    width: 25rem;
+  }
+  .sub-title {
+    font-size: 0.8em;
+  }
+
+  .cover-content {
+    justify-content: center;
+    padding-top: 0;
+    padding-left: 0;
+    background: url("../static/images/bg-cover-sm.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 720px) and (min-width: 562px) {
+  .logo-wrapper {
+    width: 32rem;
+  }
+}
+
+/* Set Newcomb's image to inline block to force a line break on the caption.  */ 
+@media (max-width: 492px) {
+  .personal {
+    display: inline-block;
+  }
+
+  .personal, .blurb, .services, .details {
+  padding-right: 30px;
+  font-size: 2vh;
+}
+
+}
+
+@media (max-width: 492px) and (max-height: 475px) {
+    img#Portrait {
+      max-width: 40%;
+  } 
+} 

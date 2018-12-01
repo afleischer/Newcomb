@@ -1,0 +1,45 @@
+
+/**
+ * Third Party Dependencies
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+@import '../node_modules/bootstrap/scss/reboot';
+
+/**
+ * Vars
+ */
+
+$color-accent: rgb(103, 175, 75);
+$color-primary: rgb(168, 216, 130);
+$font-family-text: 'Raleway', sans-serif;
+$font-text-color: #7b6e4b;
+
+/**
+ * Base Config
+ */
+
+body {
+  display: block;
+  position: fixed;
+  margin:0;
+  padding: 0;
+  max-width: 100vw;
+  min-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+ /**
+  * custom imports
+  */
+
+@import 'components/details.style';
+@import 'components/sections.style';
