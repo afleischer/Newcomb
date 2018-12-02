@@ -56,3 +56,12 @@ img#Portrait {
 .details-logo-wrapper {
   width: 120px;
 }
+
+
+
+@media screen and (max-width: 492px){
+  .details-content{
+	padding: 24px 0px 24px 96px;
+  }
+
+}
