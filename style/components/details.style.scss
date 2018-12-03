@@ -65,11 +65,13 @@ img#Portrait {
 
 }
 
+
+
 /*
   Responsive for detail content
 */
 
-@media screen and (min-width: 493px) and (max-height: 550px){
+@media screen and (min-width: 493px) and (max-height: 580px){
   img#Portrait{
     width: 40vh;
   }
