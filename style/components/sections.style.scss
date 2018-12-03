@@ -71,6 +71,16 @@
   font-family: "Raleway";
 }
 
+
+
+/* Hack for main logo */
+@media screen and (max-height: 445px){
+  .logo-wrapper{
+    width: 113vh;
+  }
+}
+
+
 @media screen and (max-width: 500px) and (orientation: portrait){
   .cover-container, .cover-content{
     height: 110vh;
