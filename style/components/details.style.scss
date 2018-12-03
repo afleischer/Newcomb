@@ -58,9 +58,10 @@ img#Portrait {
   height hack for mobile
 */
 @media screen and (max-width: 500px) and (orientation: portrait){
-  .details-content, {
-    height: 110vh;
+  .details-content {
+    transform: translateY(-5vh);
   }
+
 }
 
 /*
