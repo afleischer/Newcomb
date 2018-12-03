@@ -59,7 +59,7 @@ img#Portrait {
     width: 40vh;
   }
   .personal{
-    grid-template-rows: 40vh;
+    grid-template-rows: 30vh;
   }
   .details-content{
     font-size: 2vh;
@@ -71,6 +71,11 @@ img#Portrait {
   .details-content{
     font-size: 2vh;
   } 
+
+  .personal{
+    grid-template-rows: 32vh;
+  }
+
 }
 
 
