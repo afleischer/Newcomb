@@ -71,6 +71,12 @@
   font-family: "Raleway";
 }
 
+@media screen and (max-width: 500px) and (orientation: portrait){
+  .cover-container, .cover-content{
+    height: 110vh;
+  }
+}
+
 @media (max-width: 561px) {
   .logo-wrapper {
     width: 25rem;

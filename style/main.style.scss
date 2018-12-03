@@ -43,3 +43,17 @@ body {
 
 @import 'components/details.style';
 @import 'components/sections.style';
+
+
+/**
+*  height hack for mobile iOS
+*/
+
+@media screen and (max-width: 500px) and (orientation: portrait){
+  body{
+    height: 110vh;
+    max-height: 110vh;
+  }
+}
+
+
