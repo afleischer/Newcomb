@@ -60,7 +60,10 @@ img#Portrait {
 @media screen and (max-width: 500px) and (orientation: portrait){
   .details-content {
     transform: translateY(-5vh);
-    font-size: 1.7vh;
+   
+  }
+  .blurb, .details, .personal, .services{
+     font-size: 1.5vh;
   }
 
 }
